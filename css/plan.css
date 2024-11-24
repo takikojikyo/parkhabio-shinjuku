@@ -1,0 +1,113 @@
+/*ページタイトル*/
+
+.plan-title{ 
+  background-image: url("../img/download/plan-top.jpg");
+    background-position: 50% 77%;
+}
+
+.plan-heading{
+  background-color: rgba(172,127,98,0.1);
+  padding: 40px;
+  margin-bottom: 80px;
+}
+.plan-heading p{
+  margin-bottom: 50px;
+}
+.plan-heading .plan-btn{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+}
+.plan-heading .plan-btn li{
+  text-align: center;
+}
+.plan-heading .plan-btn a{
+  position: relative;
+  color: #fdfdfd;
+  background-color: #AC7F62;
+  display: block;
+  padding: 20px 0;
+  transition: all 0.5s;
+}
+.plan-btn a:hover .arrow-box{
+  right: 8%;
+}
+.plan-btn a:hover .arrow-box .arrow{
+  width: 25px;
+}
+/*plan-list*/
+
+
+.plan-list{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+}
+.plan-list li{
+  padding: 10px;
+border: 1px solid #ccc;
+height: 320px;
+position: relative;
+}
+.plan-list img{
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.plan-list p{
+  position: absolute;
+  bottom: 2%;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.plan-1R,.plan-1K,.plan-1ldk,.plan-2ldk{
+  margin-bottom: 120px;
+}
+
+/*lightbox追記修正*/
+.lightboxOverlay{/*拡大時のモーダル*/
+  width:100% !important;
+}
+.lb-outerContainer,.lb-dataContainer{
+  width:calc(100% - 20px) !important;
+  max-width:400px;/*拡大時の最大幅*/
+}
+.lb-outerContainer{
+  height:auto !important;
+  margin-left:auto;
+  margin-right:auto;
+}
+.lb-image{
+  width:100% !important;
+  height:auto !important;
+}
+
+
+/*レスポンシブ*/
+@media (max-width:960px){
+  .plan-heading .plan-btn{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .plan-list{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .plan-list img{
+    max-height: 240px;
+  }
+}
+@media (max-width:768px){
+.plan-heading .plan-btn{
+  grid-template-columns: repeat(1,1fr);
+}
+
+}
+
+@media (max-width:500px){
+.plan-list{
+  grid-template-columns: 1fr;
+}
+
+}

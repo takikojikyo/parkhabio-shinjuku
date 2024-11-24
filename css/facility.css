@@ -1,0 +1,98 @@
+.facility-title{
+  background-image: url("../img4/共用施設/5.JPG");
+  background-position: 50% 36%;
+}
+
+
+
+.facility-item:not(:last-of-type){
+  margin-bottom: 80px;
+}
+
+.facility-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.facility-list img{
+  height: 300px;
+  object-fit: cover;
+}
+.facility-list .fa-title{
+  font-size: 16px;
+}
+.facility-list p{
+  line-height: 1.1;
+}
+.facility-1,.facility-2,.facility-3,#fa-1{
+  margin-bottom: 120px;
+}
+.facility-1 .section-sub-title,
+.facility-2 .section-sub-title,
+.facility-3 .section-sub-title{
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.fa1-1{
+  margin-bottom: 80px;
+}
+.facility-list2{
+  display:grid ;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.facility-list2:not(:last-of-type){
+margin-bottom: 40px;
+}
+.fa1-1 .title-label{
+  margin-bottom: 10px;
+}
+.fa1-1 img{
+  height: 400px;
+  object-fit: cover;
+}
+
+
+@media (max-width: 960px) {
+  .facility-list{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 768px) {
+  
+
+  .facility-1 .section-sub-title,
+.facility-2 .section-sub-title,
+.facility-3 .section-sub-title{
+  font-size: 20px;
+  }
+  .facility1-title{
+    font-size: 20px;
+  }
+  .facility-1,.facility-2,.facility-3,#fa-1{
+    margin-bottom: 80px;
+  }
+  .facility-list2{
+    grid-template-columns: 1fr;
+  }
+  .facility-list2:not(:last-of-type){
+  margin-bottom: 15px;
+  }
+  .fa1-1 img{
+    height: 300px;
+  }
+
+}
+@media (max-width:500px){
+  .facility-list{
+    grid-template-columns: 1fr;
+  }
+  .facility-list img{
+    height: 300px;
+  }
+  .fa1-1{
+    margin-bottom: 80px;
+  }
+  
+}
